@@ -1,0 +1,2 @@
+class Volkswagen < Car
+end
