@@ -11,6 +11,6 @@ Gem::Specification.new 'require_pattern', '1.0' do |s|
   s.rdoc_options      = %w[--line-numbers --inline-source --title Scorched --encoding=UTF-8]
 
   s.required_ruby_version = '>= 1.9.3'
-  s.add_dependency 'term-colorizer'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'maxitest'
+  s.add_development_dependency 'mocha'
 end
