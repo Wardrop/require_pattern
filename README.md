@@ -23,3 +23,11 @@ require_pattern 'lib/**/*.rb', 'models/**/*.rb'
 ```
 
 Any files that refuse to load will be reported to STDERR with backtrace information.
+
+
+Tests
+-----
+
+```bash
+mtest spec
+```
