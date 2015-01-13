@@ -21,9 +21,10 @@ module Kernel
         break loaded
       elsif remaining.nil?
         STDERR.puts ReqPat::Coloring.red("\nSome files failed:")
-        require_map.each { |file, e| STDERR.puts
-            ReqPat::Coloring.red("    #{file}: ") +
-            ReqPat::Coloring.yellow("#{e.backtrace[0]} #{e}")
+        require_map.each { |file, e|
+          msg = ReqPat::Coloring.red("    #{file}: ") +
+                ReqPat::Coloring.yellow("#{e.backtrace[0]} #{e}")
+          STDERR.puts msg
         }
         STDERR.puts
         raise LoadError, "One or more files failed to load. See STDERR output for details."
