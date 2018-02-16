@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 
-Gem::Specification.new 'require_pattern', '1.1.1' do |s|
+Gem::Specification.new 'require_pattern', '1.1.2' do |s|
   s.summary           = 'Requires files based on a pattern in a robust and optimistic manner.'
   s.authors           = ['Tom Wardrop']
   s.email             = 'tom@tomwardrop.com'

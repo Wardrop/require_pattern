@@ -23,7 +23,8 @@ module Kernel
         STDERR.puts ReqPat::Coloring.red("\nSome files failed:")
         require_map.each { |file, e|
           msg = ReqPat::Coloring.red("    #{file}: ") +
-                ReqPat::Coloring.yellow("#{e.backtrace[0]} #{e}")
+                ReqPat::Coloring.yellow("#{e.backtrace[0]} #{e}") +
+                ReqPat::Coloring.yellow("\t"+e.backtrace[1..-1].join("\n\t"))
           STDERR.puts msg
         }
         STDERR.puts
